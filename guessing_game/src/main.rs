@@ -20,4 +20,14 @@ fn main() {
         io::stdin()
             .read_line(&mut guess)
             .expect("Failed to read line");
+
+        // Convert the input string into a number
+        // If parsing fails, restart loop (ignore valid input)
+        let guess: u32 = match guess.trim().parse() {
+            Ok(num) => num,
+            Err(_) => {
+                println!("Please enter a valid number.");
+                continue;
+            }
+        };
 }
