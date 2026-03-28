@@ -5,4 +5,19 @@ use rand::Rng;          // Trait required for generating random numbers
 
 fn main() {
     println!("Guess the number!");
+
+    // Generate a random number between 1 and 100 (inclusive)
+    let secret_number = rand::thread_rng().gen_range(1..100);
+
+    // Infinite loop - continues until user guesses correctly
+    loop {
+        println!("Please input your guess.");
+
+        // Create a mutable string to store user input
+        let mut guess = String::new();
+
+        // Read input from the user
+        io::stdin()
+            .read_line(&mut guess)
+            .expect("Failed to read line");
 }
