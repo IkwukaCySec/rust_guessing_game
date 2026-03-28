@@ -1,1 +1,6 @@
+# Ignore Makefile completely
+Makefile linguist-detectable=false
+Makefile linguist-generated=true
+
+# Force Rust detection
 *.rs linguist-language=Rust
