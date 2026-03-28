@@ -30,4 +30,16 @@ fn main() {
                 continue;
             }
         };
+
+        println!("You guessed: {guess}");
+
+        // Compare user's guess with the secret number
+        match guess.cmp(&secret_number) {
+            Ordering::Less => println!("Too small!"),
+            Ordering::Greater => println!("Too big!"),
+            Ordering::Equal => {
+                println!("🎉 You win!");
+                break;  // Exit loop when correct guess is made.
+            }
+        }
 }
