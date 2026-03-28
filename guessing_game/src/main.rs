@@ -1,3 +1,4 @@
 fn main() {
-    println!("Hello, world!");
+    println!("Hello World!");
+    println!("Welcome to Guessing Game!");
 }
