@@ -42,4 +42,5 @@ fn main() {
                 break;  // Exit loop when correct guess is made.
             }
         }
+    }
 }
