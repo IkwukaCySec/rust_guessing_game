@@ -1,2 +1,1 @@
-Makefile linguist-generated=true
-*.rs linguist-language-Rust
+*.rs linguist-language=Rust
