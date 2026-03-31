@@ -40,16 +40,6 @@ cargo run
 
 ---
 
-## 🧠 Clean & Documented Code (main.rs)
-
----
-
-## 📂 Alternative: Refactored Version (game.rs)
-
-This version improves structure and readability by separating logic into functions.
-
----
-
 ## 🎓 Key Concepts Demonstrated
 
 * Input handling (`stdin`)
